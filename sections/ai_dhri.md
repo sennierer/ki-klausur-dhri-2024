@@ -143,7 +143,8 @@ later be re-elected as a corresponding member in 1891 and again as a full member
     significance is reflected in the fact that many notable artists were associated with it, 
     and it continues to be mentioned throughout the text as an important part of their careers.
 
-    In summary, the Künstlerhaus was berühmt (famous) for being a prominent artistic institution in Vienna, fostering creativity, innovation, and community among its members.
+    In summary, the Künstlerhaus was berühmt (famous) for being a prominent artistic institution 
+    in Vienna, fostering creativity, innovation, and community among its members.
 
     oebl-harmonized-v2/Fraknoi_Wilhelm_1843_1924.xml:
     und ein Künstlerhaus für ung. Gelehrte und Künstler.
