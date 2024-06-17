@@ -1,40 +1,84 @@
 <!doctype html>
-<html lang="en">
+<html>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>ACDH-CH KI Klausur</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/acdh-ch-oeaw.css" id="theme">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<script src="https://unpkg.com/feather-icons"></script>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+				<style>
+					.scrollable {
+    					overflow-y: auto  !important;
+    					overflow-x: hidden !important;
+    					height: 100%;
+  						}
+				</style>
+				<section data-markdown>
+					<textarea data-template>
+					## AI for prosopographical research -
+					### Ideas and experiences from the DHRI
+					<br/>
+					<small><a href="https://github.com/sennierer/ki-klausur-dhri-2024">https://github.com/sennierer/ki-klausur-dhri-2024</a></small>
+					<br/>
+					<p>
+						<small style="font-style: italic;">Space for running through the slides, ESC for an overview</small>
+					</p>
+					</textarea>
+				</section>
+				<section data-markdown="sections/ai_dhri.md"
+					data-separator="^\r?\n---\r?\n$"
+					data-separator-vertical="^\r?\n\+\+\+\r?\n$"
+					data-separator-notes="^Note:">
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+					##### Thank you!
+					</textarea>
+				</section>
 		</div>
 
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<!-- <script src="plugin/animate/plugin.js"></script>
+		<script src="plugin/animate/svg.min.js"></script> -->
 		<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
+				width: 1400,
+				height: 900,
+				controls: false,
+				//showNotes: 'separate-page',
+				//pdfSeparateFragments: false,
+				margin: 0.04,
+
+				minScale: 0.2,
+				maxScale: 2.0,
+
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+				animate: {
+				    autoplay: true
+	 		   }
+
 			});
+			feather.replace();
 		</script>
 	</body>
 </html>
